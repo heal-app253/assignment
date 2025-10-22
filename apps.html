@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التطبيقات - تطبيقات الذكاء الاصطناعي</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="nav-link">AI Applications</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="AboutUs.html" class="nav-link">من نحن</a>
+                </li>
+                <li class="nav-item">
+                    <a href="apps.html" class="nav-link">التطبيقات</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">تسجيل الدخول</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- المحتوى الرئيسي -->
+    <main>
+        <div class="page-content">
+            <header class="page-header">
+                <h1>تطبيقات الذكاء الاصطناعي</h1>
+                <p>استعرض أحدث التطبيقات والمنصات الذكية</p>
+            </header>
+
+            <section class="apps-section">
+                <div class="table-container">
+                    <table class="data-table" id="apps-table">
+                        <thead>
+                            <tr>
+                                <th>اسم التطبيق</th>
+                                <th>اسم الشركة المطورة</th>
+                                <th>مجال الاستخدام</th>
+                                <th>مجاني/غير مجاني</th>
+                                <th>اختيار</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>DeepVision AI</td>
+                                <td>NeuralTech</td>
+                                <td>معالجة الصور</td>
+                                <td>مجاني</td>
+                                <td>
+                                    <div class="checkbox-container">
+                                        <div class="custom-checkbox" data-app-id="1"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SmartLearn</td>
+                                <td>EduAI Solutions</td>
+                                <td>التعليم</td>
+                                <td>مجاني</td>
+                                <td>
+                                    <div class="checkbox-container">
+                                        <div class="custom-checkbox" data-app-id="2"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ChatBot Pro</td>
+                                <td>Conversational AI</td>
+                                <td>خدمة العملاء</td>
+                                <td>غير مجاني</td>
+                                <td>
+                                    <div class="checkbox-container">
+                                        <div class="custom-checkbox" data-app-id="3"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <div class="actions-section">
+                <a href="add_app.html" class="btn">إضافة تطبيق جديد</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2023 جميع الحقوق محفوظة - موقع تطبيقات الذكاء الاصطناعي</p>
+        </div>
+    </footer>
+
+    <script src="myFunctions.js"></script>
+</body>
+</html>

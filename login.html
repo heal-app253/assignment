@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - تطبيقات الذكاء الاصطناعي</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="nav-link">AI Applications</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="AboutUs.html" class="nav-link">من نحن</a>
+                </li>
+                <li class="nav-item">
+                    <a href="apps.html" class="nav-link">التطبيقات</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">تسجيل الدخول</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- المحتوى الرئيسي -->
+    <main>
+        <div class="page-content">
+            <div class="login-container">
+                <div class="form-container">
+                    <header class="form-header">
+                        <h1>تسجيل الدخول</h1>
+                        <p>للدخول إلى لوحة إدارة التطبيقات</p>
+                    </header>
+
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="username" class="form-label">اسم المستخدم</label>
+                            <input type="text" id="username" class="form-input" required 
+                                   placeholder="أدخل اسم المستخدم">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="form-label">كلمة المرور</label>
+                            <input type="password" id="password" class="form-input" required 
+                                   placeholder="أدخل كلمة المرور">
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn">تسجيل الدخول</button>
+                            <a href="index.html" class="btn btn-secondary">العودة إلى الرئيسية</a>
+                        </div>
+
+                        <div class="login-hint">
+                            <p><strong>بيانات الدخول التجريبية:</strong></p>
+                            <p>اسم المستخدم: <strong>admin</strong></p>
+                            <p>كلمة المرور: <strong>1234</strong></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2023 جميع الحقوق محفوظة - موقع تطبيقات الذكاء الاصطناعي</p>
+        </div>
+    </footer>
+
+    <script src="myFunctions.js"></script>
+</body>
+</html>

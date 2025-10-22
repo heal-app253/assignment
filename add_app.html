@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة تطبيق - تطبيقات الذكاء الاصطناعي</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="nav-link">AI Applications</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="AboutUs.html" class="nav-link">من نحن</a>
+                </li>
+                <li class="nav-item">
+                    <a href="apps.html" class="nav-link">التطبيقات</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">تسجيل الدخول</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- المحتوى الرئيسي -->
+    <main>
+        <div class="page-content">
+            <header class="page-header">
+                <h1>إضافة تطبيق جديد</h1>
+                <p>أدخل معلومات التطبيق الجديد في النموذج أدناه</p>
+            </header>
+
+            <section class="form-section">
+                <div class="form-container">
+                    <form id="add-app-form">
+                        <div class="form-group">
+                            <label for="app-name" class="form-label">اسم التطبيق *</label>
+                            <input type="text" id="app-name" class="form-input" required 
+                                   placeholder="أحرف إنجليزية فقط بدون مسافات">
+                            <small class="form-hint">مثال: MyApp (بدون مسافات أو رموز خاصة)</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company" class="form-label">الشركة المطورة *</label>
+                            <input type="text" id="company" class="form-input" required 
+                                   placeholder="أحرف إنجليزية مع أرقام">
+                            <small class="form-hint">مثال: Tech Company</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="website" class="form-label">الموقع الإلكتروني *</label>
+                            <input type="url" id="website" class="form-input" required 
+                                   placeholder="https://example.com">
+                            <small class="form-hint">يجب أن يبدأ بـ http:// أو https://</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="is-free" class="form-label">نوع التطبيق *</label>
+                            <select id="is-free" class="form-select" required>
+                                <option value="">اختر النوع</option>
+                                <option value="مجاني">مجاني</option>
+                                <option value="غير مجاني">غير مجاني</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category" class="form-label">مجال الاستخدام *</label>
+                            <select id="category" class="form-select" required>
+                                <option value="">اختر المجال</option>
+                                <option value="الرعاية الصحية">الرعاية الصحية</option>
+                                <option value="التعليم">التعليم</option>
+                                <option value="التجارة الإلكترونية">التجارة الإلكترونية</option>
+                                <option value="الروبوتات">الروبوتات</option>
+                                <option value="خدمة العملاء">خدمة العملاء</option>
+                                <option value="معالجة الصور">معالجة الصور</option>
+                                <option value="التمويل">التمويل</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="description" class="form-label">شرح مختصر عن التطبيق</label>
+                            <textarea id="description" class="form-textarea" 
+                                      placeholder="أدخل وصفاً مختصراً للتطبيق وميزاته الرئيسية..."
+                                      rows="5"></textarea>
+                            <small class="form-hint">يمكنك كتابة وصف مفيد عن التطبيق ووظائفه</small>
+                        </div>
+
+                        <!-- الحقول الجديدة - URLs -->
+                        <div class="form-group">
+                            <label for="logo-url" class="form-label">رابط شعار التطبيق (URL)</label>
+                            <input type="url" id="logo-url" class="form-input" 
+                                   placeholder="https://example.com/logo.png">
+                            <small class="form-hint">رابط مباشر لصورة شعار التطبيق (اختياري)</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="video-url" class="form-label">رابط فيديو (Embed URL)</label>
+                            <input type="url" id="video-url" class="form-input" 
+                                   placeholder="https://www.youtube.com/embed/...">
+                            <small class="form-hint">رابط embed لعرض الفيديو مباشرة (اختياري)</small>
+                        </div>
+
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn">إرسال التطبيق</button>
+                            <button type="button" id="reset-btn" class="btn btn-secondary">إعادة التعيين</button>
+                            <a href="apps.html" class="btn btn-secondary">العودة إلى التطبيقات</a>
+                        </div>
+
+                        <div class="form-notice">
+                            <p><strong>ملاحظة:</strong> جميع الحقول التي تحمل علامة (*) إلزامية</p>
+                            <p>بعد إرسال النموذج بنجاح، سيتم توجيهك إلى صفحة التطبيقات حيث يمكنك رؤية التطبيق الجديد</p>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2023 جميع الحقوق محفوظة - موقع تطبيقات الذكاء الاصطناعي</p>
+        </div>
+    </footer>
+
+    <script src="myFunctions.js"></script>
+</body>
+</html>
