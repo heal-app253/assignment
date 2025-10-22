@@ -513,7 +513,7 @@ function setupLoginPage() {
                 
             } else {
                 console.log('❌ فشل تسجيل الدخول');
-                alert('❌ اسم المستخدم أو كلمة المرور غير صحيحة! حاول مرة أخرى.\n\nتلميح: استخدم admin / password123');
+                alert('❌ اسم المستخدم أو كلمة المرور غير صحيحة! حاول مرة أخرى.\n\nتلميح: استخدم admin / 1234');
             }
         });
     }
@@ -589,3 +589,4 @@ var styleSheet = document.createElement('style');
 styleSheet.textContent = dynamicStyles;
 
 document.head.appendChild(styleSheet);
+
