@@ -397,15 +397,8 @@ function validateForm() {
     }
     
     // رابط الفيديو (إذا تم إدخاله)
-    var videoUrl = document.getElementById('video-url').value;
-    if (videoUrl && !urlPattern.test(videoUrl)) {
-        console.log('خطأ في رابط الفيديو');
-        document.getElementById("video-url").focus();
-        showError('video-url', 'يرجى إدخال رابط صحيح للفيديو');
-        isValid = false;
-    } else {
-        clearError('video-url');
-    }
+    var videoUrl = document.getElementById('video-url').value;   
+        clearError('video-url');    
     
     // التحقق من اختيار نوع التطبيق
     var isFree = document.getElementById('is-free').value;
@@ -594,4 +587,5 @@ var dynamicStyles = `
 
 var styleSheet = document.createElement('style');
 styleSheet.textContent = dynamicStyles;
+
 document.head.appendChild(styleSheet);
